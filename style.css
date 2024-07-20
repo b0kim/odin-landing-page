@@ -30,7 +30,7 @@ body {
 .header-container,
 .first,
 .second,
-.quote-section,
+.third,
 .fourth,
 .footer {
     max-width: 900px;
@@ -38,8 +38,9 @@ body {
 
 .header-container,
 .first {
-    padding: 0px 80px;
+    padding: 0px 120px;
 }
+
 
 .header-container {
     padding-top: 5px;
@@ -65,41 +66,42 @@ body {
 }
 
 li,
-.secondary-text {
-    font-size: 14px;
+.secondary-text,
+.placeholder {
+    font-size: 12px;
     font-weight: 400;
     color: #e5e7eb
 }
 
 .first {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     display: flex;
     align-items: space-between;
     gap: 35px;
 }
 
-.first div,
-.first img {
+.container,
+.placeholder {
     flex: 1;
 }
 
-.first div {
+.container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
 }
-
-.first img {
-    background-color: grey;
+.placeholder {
+    background-color: rgba(131, 128, 128, 0.768);
+    align-self: stretch;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .main-text {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
 } 
 
@@ -112,7 +114,7 @@ button {
 }
 
 .second {
-    flex: 1 1 300px;
+    flex: 1 1 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,23 +160,23 @@ button {
     text-align: center;
 }
 
-.quote-section {
+.third {
     background-color: #e5e7eb;
     flex: 1;
     flex-basis: 200px;
-    padding: 10px 100px; 
+    padding: 50px 200px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.quote-section .quote {
-    font-size: 24px;
+.third .quote {
+    font-size: 20px;
     font-weight: 300;
     font-style: italic;
 }
 
-.quote-section .author {
+.third .author {
     font-weight: bold;
     align-self: flex-end;
 }
@@ -183,12 +185,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 80px;
+    padding: 50px 130px;
 }
 
 .cta {
     background-color: #3882f6;
-    padding: 25px 50px;
+    padding: 25px 70px;
     border-radius: 8px;
     flex: 1;
     display: flex;
@@ -201,11 +203,13 @@ button {
 }
 
 .cta-main {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .cta-secondary {
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 12px;
 }
 
 .cta button {
@@ -217,4 +221,5 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }
